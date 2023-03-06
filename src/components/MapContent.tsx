@@ -26,7 +26,7 @@ const MapContent = ({ selectedCity }: Props) => {
   }, [selectedCity]);
 
   return (
-    <div className="w-full">
+    <div className="w-full h-[100vh]">
       <ReactMapGL
         {...viewport}
         mapboxAccessToken={mapboxAccessToken}

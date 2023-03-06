@@ -75,7 +75,7 @@ const WeatherModal = ({ selectedCity }: Props) => {
           className="fixed inset-0 z-[100] overflow-y-auto bg-black bg-opacity-70 flex items-center justify-center backdrop-blur-md backdrop"
           onClick={closeModalOnBackdropClick}
         >
-          <div className="bg-gray-900 p-6 rounded-lg shadow-lg w-full md:w-[700px] flex flex-col gap-8 ">
+          <div className="bg-gray-900 p-6 rounded-lg shadow-lg w-full md:w-[700px] flex flex-col gap-8 overflow-y-auto">
             <h2 className="font-medium text-orange-500 text-xl md:text-3xl">
               {isLoading
                 ? `Loading Weather Forecast for ${selectedCity?.name} `
@@ -86,7 +86,7 @@ const WeatherModal = ({ selectedCity }: Props) => {
                 <FaCircleNotch className="animate-spin" />
               </div>
             ) : (
-              <div className="w-full overflow-x-auto">
+              <div className="w-full overflow-x-auto h-[400px] md:h-auto">
                 {weather && (
                   <table className="table table-bordered table-hover w-full">
                     <thead>

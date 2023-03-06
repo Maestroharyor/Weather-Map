@@ -56,7 +56,7 @@ const MainApp: React.FC = () => {
         } fixed top-0 left-0 w-full h-full z-50`}
         onClick={() => setShowMenu(false)}
       ></div>
-      <div className="flex relative">
+      <div className="flex flex-col md:flex-row relative">
         <Sidebar
           showMenu={showMenu}
           setShowMenu={setShowMenu}
