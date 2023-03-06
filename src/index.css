@@ -6,3 +6,9 @@
 .mapboxgl-canvas {
   height: 100vh;
 }
+
+@media (min-width: 768px) {
+  .mapboxgl-canvas {
+    height: auto;
+  }
+}
