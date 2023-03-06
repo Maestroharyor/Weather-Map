@@ -30,6 +30,7 @@ const Sidebar: React.FC<Props> = ({
 
   const handleCityClick = (city: City) => {
     setSelectedCity(city);
+    setShowMenu(false);
   };
 
   return (
