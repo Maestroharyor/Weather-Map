@@ -37,7 +37,7 @@ const Sidebar: React.FC<Props> = ({
     <div
       className={`${
         showMenu ? "translate-x-0" : "-translate-x-full"
-      } md:translate-x-0 transform transition ease-in-out md:ease-out fixed md:relative top-0 left-0 w-full md:w-72 h-screen overflow-y-auto bg-gray-900 border-r-2 border-gray-800 pt-4 z-50 px-4 md:py-6 md:px-4`}
+      } md:translate-x-0 transform transition ease-in-out md:ease-out fixed md:relative top-0 left-0 w-full md:w-72 h-screen overflow-y-auto bg-gray-900 border-r-2 border-gray-800 pt-4 pb-10 z-50 px-4 md:py-6 md:px-4`}
     >
       <div className="flex justify-between items-center py-2 md:px-4">
         <p className="text-2xl font-bold">
